@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width,initial-scale=1.0">
+
+<title>KivuStream | Movie Details</title>
+
+<link rel="icon" href="assets/favicon.ico">
+
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/movie.css">
+<link rel="stylesheet" href="css/cards.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div id="navbar"></div>
+
+<!-- HERO -->
+
+<section class="movie-hero">
+
+    <img
+        id="movieBackdrop"
+        class="movie-backdrop">
+
+    <div class="movie-overlay"></div>
+
+    <div class="container movie-content">
+
+        <div class="movie-poster">
+
+            <img
+                id="moviePoster">
+
+        </div>
+
+        <div class="movie-details">
+
+            <span class="featured">
+
+                Featured Movie
+
+            </span>
+
+            <h1 id="movieTitle">
+
+                Loading...
+
+            </h1>
+
+            <div class="movie-meta">
+
+                <span id="movieRating"></span>
+
+                <span id="movieYear"></span>
+
+                <span id="movieRuntime"></span>
+
+                <span id="movieLanguage"></span>
+
+            </div>
+
+            <div id="movieGenres">
+
+            </div>
+
+            <p id="movieOverview">
+
+            </p>
+
+            <div class="movie-buttons">
+
+                <a
+                    id="watchMovie"
+
+                    class="btn btn-primary">
+
+                    <i class="fa-solid fa-play"></i>
+
+                    Watch Now
+
+                </a>
+
+                <button
+                    id="downloadMovie"
+
+                    class="btn btn-secondary">
+
+                    <i class="fa-solid fa-download"></i>
+
+                    Download
+
+                </button>
+
+                <button
+                    id="favoriteMovie"
+
+                    class="btn btn-secondary">
+
+                    <i class="fa-regular fa-heart"></i>
+
+                    My List
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CAST -->
+
+<section
+class="section">
+
+<div class="container">
+
+<div class="section-header">
+
+<h2 class="section-title">
+
+Cast
+
+</h2>
+
+</div>
+
+<div
+id="castContainer"
+
+class="cast-slider">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- TRAILER -->
+
+<section
+class="section">
+
+<div class="container">
+
+<div class="section-header">
+
+<h2 class="section-title">
+
+Official Trailer
+
+</h2>
+
+</div>
+
+<div class="trailer">
+
+<iframe
+
+id="movieTrailer"
+
+allowfullscreen>
+
+</iframe>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SIMILAR -->
+
+<section
+id="similarMovies">
+
+</section>
+
+<div id="footer"></div>
+
+<script type="module"
+src="js/movie.js"></script>
+
+</body>
+
+</html>
