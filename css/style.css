@@ -1,0 +1,479 @@
+/* ==========================================
+   KIVUSTREAM GLOBAL STYLES
+========================================== */
+
+body{
+
+    font-family:var(--font);
+
+    background:
+        radial-gradient(circle at top,
+        rgba(0,229,180,.08),
+        transparent 35%),
+        var(--bg-body);
+
+    color:var(--text-main);
+
+    overflow-x:hidden;
+
+    line-height:1.6;
+}
+
+/*==========================
+    CONTAINER
+==========================*/
+
+.container{
+
+    width:min(100% - 32px,var(--container));
+
+    margin-inline:auto;
+
+}
+
+/*==========================
+    SECTION
+==========================*/
+
+.section{
+
+    padding:70px 0;
+
+}
+
+.section-header{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    margin-bottom:24px;
+
+}
+
+.section-title{
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    letter-spacing:.5px;
+
+}
+
+.section-subtitle{
+
+    color:var(--text-muted);
+
+    margin-top:4px;
+
+}
+
+.view-all{
+
+    color:var(--primary);
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.view-all:hover{
+
+    color:#fff;
+
+}
+
+/*==========================
+    BUTTONS
+==========================*/
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    padding:14px 28px;
+
+    border-radius:999px;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+    white-space:nowrap;
+
+}
+
+.btn-primary{
+
+    background:var(--primary);
+
+    color:#081018;
+
+    box-shadow:var(--shadow-glow);
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-3px);
+
+    background:var(--primary-light);
+
+}
+
+.btn-secondary{
+
+    border:1px solid var(--border);
+
+    background:rgba(255,255,255,.05);
+
+    color:#fff;
+
+}
+
+.btn-secondary:hover{
+
+    background:rgba(255,255,255,.12);
+
+}
+
+.btn-ghost{
+
+    color:var(--text-light);
+
+}
+
+.btn-ghost:hover{
+
+    color:var(--primary);
+
+}
+
+/*==========================
+    BADGES
+==========================*/
+
+.badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:5px 12px;
+
+    border-radius:999px;
+
+    font-size:.75rem;
+
+    font-weight:600;
+
+}
+
+.badge-primary{
+
+    background:var(--primary);
+
+    color:#081018;
+
+}
+
+.badge-rating{
+
+    background:rgba(255,213,74,.15);
+
+    color:var(--rating);
+
+}
+
+.badge-hd{
+
+    background:rgba(34,197,94,.18);
+
+    color:var(--success);
+
+}
+
+/*==========================
+    GLASS EFFECT
+==========================*/
+
+.glass{
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+/*==========================
+    CARDS
+==========================*/
+
+.card{
+
+    background:var(--bg-card);
+
+    border-radius:var(--radius-lg);
+
+    overflow:hidden;
+
+    transition:var(--transition);
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+/*==========================
+    IMAGE
+==========================*/
+
+.img-cover{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+/*==========================
+    FLEX
+==========================*/
+
+.flex{
+
+    display:flex;
+
+}
+
+.flex-center{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.flex-between{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+.grid{
+
+    display:grid;
+
+}
+
+/*==========================
+    TEXT
+==========================*/
+
+.text-muted{
+
+    color:var(--text-muted);
+
+}
+
+.text-center{
+
+    text-align:center;
+
+}
+
+/*==========================
+    LOADER
+==========================*/
+
+#loader{
+
+    position:fixed;
+
+    inset:0;
+
+    background:var(--bg-body);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:99999;
+
+}
+
+.spinner{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    border:5px solid rgba(255,255,255,.08);
+
+    border-top-color:var(--primary);
+
+    animation:spin .8s linear infinite;
+
+}
+
+/*==========================
+    SKELETON
+==========================*/
+
+.skeleton{
+
+    background:linear-gradient(
+        90deg,
+        #161d2e 25%,
+        #20293d 50%,
+        #161d2e 75%
+    );
+
+    background-size:300%;
+
+    animation:skeleton 1.5s infinite;
+
+}
+
+/*==========================
+    BACK TO TOP
+==========================*/
+
+#backToTop{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    color:#081018;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    box-shadow:var(--shadow-glow);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:var(--transition);
+
+    z-index:500;
+
+}
+
+#backToTop.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+#backToTop:hover{
+
+    transform:translateY(-4px);
+
+}
+
+/*==========================
+    ANIMATIONS
+==========================*/
+
+.fade-up{
+
+    animation:fadeUp .8s ease both;
+
+}
+
+@keyframes spin{
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+@keyframes skeleton{
+
+    0%{
+
+        background-position:200% 0;
+
+    }
+
+    100%{
+
+        background-position:-200% 0;
+
+    }
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(35px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
