@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>KivuStream | Watch</title>
+
+<link rel="icon" href="assets/favicon.ico">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/watch.css">
+<link rel="stylesheet" href="css/cards.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+<div id="navbar"></div>
+
+<main class="watch-page">
+
+    <!-- Player -->
+
+    <section class="player-section">
+
+        <div class="container">
+
+            <div class="player-wrapper">
+
+                <video
+
+                    id="player"
+
+                    playsinline
+
+                    controls>
+
+                </video>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Movie Info -->
+
+    <section class="watch-info">
+
+        <div class="container">
+
+            <h1 id="watchTitle">
+
+                Loading...
+
+            </h1>
+
+            <div id="watchMeta"
+                 class="watch-meta">
+
+            </div>
+
+            <p id="watchOverview">
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Episode Selector -->
+
+    <section
+        id="episodeSection"
+        class="section">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <h2 class="section-title">
+
+                    Episodes
+
+                </h2>
+
+            </div>
+
+            <div id="episodeList">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Streaming Servers -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <h2 class="section-title">
+
+                    Servers
+
+                </h2>
+
+            </div>
+
+            <div
+                id="serverList"
+                class="server-list">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Downloads -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <h2 class="section-title">
+
+                    Download
+
+                </h2>
+
+            </div>
+
+            <div
+                id="downloadList"
+                class="download-list">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Related Movies -->
+
+    <section
+        id="relatedMovies">
+
+    </section>
+
+</main>
+
+<div id="footer"></div>
+
+<script type="module"
+src="js/watch.js"></script>
+
+</body>
+
+</html>
