@@ -269,5 +269,12 @@ window.addEventListener("load",()=>{
     );
 
     await loadHome();
+    );
+    await loadComponent(
+    "searchModal",
+    "search-modal.html"
+
+
+initSearch();
 
 })();
