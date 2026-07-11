@@ -151,8 +151,9 @@ async function loadHome(){
 
     ]);
 
-    await loadHero();
+    import { initHeroSlider } from "./hero.js";
 
+initHeroSlider(trending);
     renderSection(
 
         "trendingMovies",
