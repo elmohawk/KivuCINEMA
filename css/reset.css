@@ -1,0 +1,206 @@
+/* ==========================================
+   KIVUSTREAM RESET CSS
+   Modern CSS Reset
+========================================== */
+
+/* Box sizing */
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* HTML */
+
+html{
+    scroll-behavior:smooth;
+    -webkit-text-size-adjust:100%;
+}
+
+/* Body */
+
+body{
+    min-height:100vh;
+    text-rendering:optimizeLegibility;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    overflow-x:hidden;
+}
+
+/* Media */
+
+img,
+picture,
+video,
+canvas,
+svg{
+    display:block;
+    max-width:100%;
+}
+
+/* Forms */
+
+input,
+button,
+textarea,
+select{
+    font:inherit;
+    border:none;
+    outline:none;
+    background:none;
+}
+
+/* Buttons */
+
+button{
+    cursor:pointer;
+    user-select:none;
+}
+
+/* Links */
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+/* Lists */
+
+ul,
+ol{
+    list-style:none;
+}
+
+/* Tables */
+
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* Quotes */
+
+blockquote,
+q{
+    quotes:none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after{
+    content:"";
+}
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-size:inherit;
+    font-weight:inherit;
+}
+
+/* Inputs */
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button{
+    display:none;
+}
+
+/* Textarea */
+
+textarea{
+    resize:none;
+}
+
+/* Disabled */
+
+button:disabled,
+input:disabled{
+    cursor:not-allowed;
+}
+
+/* Hidden */
+
+[hidden]{
+    display:none !important;
+}
+
+/* Selection */
+
+::selection{
+    background:#00E5B4;
+    color:#070B17;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:10px;
+    height:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0D1222;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#00E5B4;
+    border-radius:999px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#00B894;
+}
+
+/* Focus */
+
+:focus-visible{
+    outline:2px solid #00E5B4;
+    outline-offset:2px;
+}
+
+/* Lazy Images */
+
+img{
+    user-select:none;
+    -webkit-user-drag:none;
+}
+
+/* Videos */
+
+video{
+    max-width:100%;
+    height:auto;
+}
+
+/* SVG */
+
+svg{
+    fill:currentColor;
+}
+
+/* HR */
+
+hr{
+    border:none;
+}
+
+/* Strong */
+
+strong{
+    font-weight:700;
+}
+
+/* Italic */
+
+em{
+    font-style:italic;
+}
