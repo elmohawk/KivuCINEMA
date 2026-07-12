@@ -1,4 +1,4 @@
-<nav class="navbar">
+<nav class="navbar" id="navbar">
 
     <div class="container navbar-container">
 
@@ -6,7 +6,7 @@
 
         <a href="index.html" class="logo">
 
-            <i class="fa-solid fa-film"></i>
+            <i class="fa-solid fa-play"></i>
 
             <span>KivuStream</span>
 
@@ -47,26 +47,12 @@
                 <ul class="dropdown-menu">
 
                     <li><a href="#">Action</a></li>
-
                     <li><a href="#">Adventure</a></li>
-
-                    <li><a href="#">Animation</a></li>
-
                     <li><a href="#">Comedy</a></li>
-
-                    <li><a href="#">Crime</a></li>
-
                     <li><a href="#">Drama</a></li>
-
-                    <li><a href="#">Fantasy</a></li>
-
                     <li><a href="#">Horror</a></li>
-
-                    <li><a href="#">Romance</a></li>
-
+                    <li><a href="#">Animation</a></li>
                     <li><a href="#">Sci-Fi</a></li>
-
-                    <li><a href="#">Thriller</a></li>
 
                 </ul>
 
@@ -74,7 +60,7 @@
 
             <li>
 
-                <a href="trending.html">
+                <a href="#trendingMovies">
 
                     Trending
 
@@ -84,138 +70,53 @@
 
         </ul>
 
-        <!-- Search -->
+        <!-- Right Side -->
 
-        <button class="nav-icon" id="searchBtn">
+        <div class="navbar-actions">
 
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <button id="searchBtn" class="nav-icon">
 
-        </button>
+                <i class="fa-solid fa-magnifying-glass"></i>
 
-        <!-- Notification -->
+            </button>
 
-        <button class="nav-icon">
+            <a href="favorites.html" class="nav-icon">
 
-            <i class="fa-regular fa-bell"></i>
+                <i class="fa-regular fa-heart"></i>
 
-            <span class="notification-dot"></span>
+            </a>
 
-        </button>
+            <a href="profile.html" class="nav-avatar">
 
-        <!-- Profile -->
+                <img src="assets/avatar.png"
+                     alt="Profile">
 
-        <a href="profile.html" class="profile">
+            </a>
 
-            <img
-                src="assets/images/avatar.png"
-                alt="Profile">
+            <button id="menuToggle" class="menu-toggle">
 
-        </a>
+                <i class="fa-solid fa-bars"></i>
 
-        <!-- Mobile Menu -->
+            </button>
 
-        <button id="menuBtn" class="menu-btn">
+        </div>
 
-            <i class="fa-solid fa-bars"></i>
+    </div>
 
-        </button>
+    <!-- Mobile Menu -->
+
+    <div class="mobile-menu" id="mobileMenu">
+
+        <a href="index.html">Home</a>
+
+        <a href="movies.html">Movies</a>
+
+        <a href="series.html">TV Series</a>
+
+        <a href="favorites.html">My List</a>
+
+        <a href="profile.html">Profile</a>
 
     </div>
 
 </nav>
-
-<!-- Mobile Sidebar -->
-
-<aside id="mobileMenu">
-
-    <div class="mobile-header">
-
-        <h2>KivuStream</h2>
-
-        <button id="closeMenu">
-
-            <i class="fa-solid fa-xmark"></i>
-
-        </button>
-
-    </div>
-
-    <ul>
-
-        <li>
-
-            <a href="index.html">
-
-                <i class="fa-solid fa-house"></i>
-
-                Home
-
-            </a>
-
-        </li>
-
-        <li>
-
-            <a href="movies.html">
-
-                <i class="fa-solid fa-film"></i>
-
-                Movies
-
-            </a>
-
-        </li>
-
-        <li>
-
-            <a href="series.html">
-
-                <i class="fa-solid fa-tv"></i>
-
-                TV Series
-
-            </a>
-
-        </li>
-
-        <li>
-
-            <a href="trending.html">
-
-                <i class="fa-solid fa-fire"></i>
-
-                Trending
-
-            </a>
-
-        </li>
-
-        <li>
-
-            <a href="favorites.html">
-
-                <i class="fa-solid fa-heart"></i>
-
-                My List
-
-            </a>
-
-        </li>
-
-        <li>
-
-            <a href="downloads.html">
-
-                <i class="fa-solid fa-download"></i>
-
-                Downloads
-
-            </a>
-
-        </li>
-
-    </ul>
-
-</aside>
-
-<div id="menuOverlay"></div>
