@@ -1,196 +1,66 @@
-/* ==========================================
-   KIVUSTREAM DESIGN SYSTEM
-   ========================================== */
+/*==========================================
+    KIVUSTREAM DESIGN SYSTEM
+==========================================*/
 
-:root {
+:root{
 
-    /*==========================
-      BRAND COLORS
-    ==========================*/
+    /* Brand */
 
-    --primary: #00E5B4;
-    --primary-dark: #00B894;
-    --primary-light: #42F5C5;
+    --primary:#00E5FF;
+    --primary-hover:#00B8D4;
+    --secondary:#7C3AED;
+    --accent:#FFB800;
 
-    --secondary: #00C2FF;
-    --accent: #7C3AED;
+    /* Background */
 
-    --success: #22C55E;
-    --warning: #FACC15;
-    --danger: #EF4444;
+    --bg:#070B17;
+    --bg-secondary:#0E1424;
+    --surface:#151C30;
+    --surface-hover:#1D2740;
 
-    /*==========================
-      BACKGROUNDS
-    ==========================*/
+    /* Text */
 
-    --bg-body: #070B17;
+    --text:#FFFFFF;
+    --text-secondary:#B6C2D9;
+    --text-muted:#7B879F;
 
-    --bg-secondary: #0D1222;
+    /* Border */
 
-    --bg-card: #141B2D;
+    --border:rgba(255,255,255,.08);
 
-    --bg-hover: #1C2438;
+    /* Rating */
 
-    --bg-navbar: rgba(7,11,23,.75);
+    --rating:#FFD54A;
 
-    --bg-modal: rgba(0,0,0,.75);
+    /* Status */
 
-    /*==========================
-      TEXT
-    ==========================*/
+    --success:#00D084;
+    --danger:#FF4D4F;
+    --warning:#FFB020;
 
-    --text-main: #FFFFFF;
+    /* Radius */
 
-    --text-light: #D5D9E2;
+    --radius-sm:10px;
+    --radius:16px;
+    --radius-lg:24px;
+    --radius-xl:32px;
 
-    --text-muted: #8D97AE;
+    /* Shadow */
 
-    --text-dark: #4B5563;
+    --shadow-sm:0 4px 12px rgba(0,0,0,.25);
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+    --shadow-lg:0 20px 60px rgba(0,0,0,.5);
 
-    /*==========================
-      BORDER
-    ==========================*/
+    /* Navbar */
 
-    --border: rgba(255,255,255,.08);
+    --navbar-height:75px;
 
-    --border-hover: rgba(0,229,180,.5);
+    /* Container */
 
-    /*==========================
-      RATINGS
-    ==========================*/
+    --container:1400px;
 
-    --rating: #FFD54A;
+    /* Animation */
 
-    /*==========================
-      SHADOWS
-    ==========================*/
-
-    --shadow-sm:
-        0 5px 15px rgba(0,0,0,.25);
-
-    --shadow-md:
-        0 10px 25px rgba(0,0,0,.35);
-
-    --shadow-lg:
-        0 20px 50px rgba(0,0,0,.45);
-
-    --shadow-glow:
-        0 0 25px rgba(0,229,180,.35);
-
-    /*==========================
-      BORDER RADIUS
-    ==========================*/
-
-    --radius-xs: 6px;
-
-    --radius-sm: 10px;
-
-    --radius-md: 14px;
-
-    --radius-lg: 20px;
-
-    --radius-xl: 28px;
-
-    --radius-pill: 999px;
-
-    /*==========================
-      CONTAINER
-    ==========================*/
-
-    --container: 1400px;
-
-    --navbar-height: 80px;
-
-    --hero-height: 90vh;
-
-    --card-width: 215px;
-
-    --card-height: 320px;
-
-    /*==========================
-      SPACING
-    ==========================*/
-
-    --space-1: 4px;
-
-    --space-2: 8px;
-
-    --space-3: 12px;
-
-    --space-4: 16px;
-
-    --space-5: 20px;
-
-    --space-6: 24px;
-
-    --space-7: 32px;
-
-    --space-8: 40px;
-
-    --space-9: 56px;
-
-    --space-10: 72px;
-
-    /*==========================
-      FONT
-    ==========================*/
-
-    --font: "Poppins", sans-serif;
-
-    --fs-xs: .75rem;
-
-    --fs-sm: .875rem;
-
-    --fs-md: 1rem;
-
-    --fs-lg: 1.125rem;
-
-    --fs-xl: 1.4rem;
-
-    --fs-2xl: 2rem;
-
-    --fs-3xl: 3rem;
-
-    --fs-4xl: 4rem;
-
-    /*==========================
-      FONT WEIGHT
-    ==========================*/
-
-    --fw-light: 300;
-
-    --fw-normal: 400;
-
-    --fw-medium: 500;
-
-    --fw-semibold: 600;
-
-    --fw-bold: 700;
-
-    --fw-black: 800;
-
-    /*==========================
-      TRANSITIONS
-    ==========================*/
-
-    --transition-fast: .2s ease;
-
-    --transition: .35s ease;
-
-    --transition-slow: .5s ease;
-
-    /*==========================
-      Z INDEX
-    ==========================*/
-
-    --z-dropdown: 100;
-
-    --z-sticky: 500;
-
-    --z-navbar: 800;
-
-    --z-modal: 900;
-
-    --z-loader: 9999;
+    --transition:.3s ease;
 
 }
