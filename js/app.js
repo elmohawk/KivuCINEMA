@@ -13,6 +13,9 @@ import {
 
 import { createMovieCard } from "./movieCard.js";
 
+import { initHeroSlider } from "./hero.js";
+import { initSearch } from "./search.js";
+
 /*==========================================
     COMPONENT LOADER
 ==========================================*/
@@ -151,8 +154,6 @@ async function loadHome(){
 
     ]);
 
-    import { initHeroSlider } from "./hero.js";
-
 initHeroSlider(trending);
     renderSection(
 
@@ -241,40 +242,30 @@ window.addEventListener("load",()=>{
 /*==========================================
     START
 ==========================================*/
-
 (async()=>{
 
     await loadComponent(
-
         "navbar",
-
         "navbar.html"
-
     );
 
     await loadComponent(
-
         "hero",
-
         "hero.html"
-
     );
 
     await loadComponent(
-
         "footer",
-
         "footer.html"
+    );
 
+    await loadComponent(
+        "searchModal",
+        "search-modal.html"
     );
 
     await loadHome();
-    );
-    await loadComponent(
-    "searchModal",
-    "search-modal.html"
 
-
-initSearch();
+    initSearch();
 
 })();
