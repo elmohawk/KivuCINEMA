@@ -1,0 +1,333 @@
+/*==========================================
+    KIVUSTREAM ANIMATIONS
+==========================================*/
+
+/* Fade In */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+/* Slide Up */
+
+@keyframes slideUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Slide Left */
+
+@keyframes slideLeft{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/* Slide Right */
+
+@keyframes slideRight{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/* Hero Zoom */
+
+@keyframes heroZoom{
+
+    from{
+
+        transform:scale(1);
+
+    }
+
+    to{
+
+        transform:scale(1.08);
+
+    }
+
+}
+
+/* Floating */
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Pulse */
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.08);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* Rotate */
+
+@keyframes rotate{
+
+    from{
+
+        transform:rotate(0);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* Skeleton */
+
+@keyframes shimmer{
+
+    0%{
+
+        background-position:-400px 0;
+
+    }
+
+    100%{
+
+        background-position:400px 0;
+
+    }
+
+}
+
+/* Hero */
+
+.hero-backdrop{
+
+    animation:heroZoom 18s linear infinite alternate;
+
+}
+
+.hero-content{
+
+    animation:slideUp .8s ease;
+
+}
+
+.hero-poster{
+
+    animation:slideLeft .9s ease;
+
+}
+
+/* Cards */
+
+.movie-card{
+
+    animation:fadeIn .6s ease;
+
+}
+
+.movie-card:hover{
+
+    transform:translateY(-10px) scale(1.03);
+
+}
+
+/* Buttons */
+
+.btn{
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* Play Button */
+
+.play-circle{
+
+    animation:pulse 2.5s infinite;
+
+}
+
+/* Floating Icons */
+
+.floating{
+
+    animation:floating 4s ease-in-out infinite;
+
+}
+
+/* Loader */
+
+.skeleton{
+
+    background:linear-gradient(
+
+        90deg,
+
+        rgba(255,255,255,.05),
+
+        rgba(255,255,255,.12),
+
+        rgba(255,255,255,.05)
+
+    );
+
+    background-size:800px 100%;
+
+    animation:shimmer 1.5s infinite linear;
+
+}
+
+/* Scroll Reveal */
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:all .8s ease;
+
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* Image Hover */
+
+.movie-poster img{
+
+    transition:.45s;
+
+}
+
+.movie-card:hover .movie-poster img{
+
+    transform:scale(1.08);
+
+}
+
+/* Navbar */
+
+.navbar.scrolled{
+
+    animation:fadeIn .4s ease;
+
+}
+
+/* Modal */
+
+.search-modal{
+
+    animation:fadeIn .3s ease;
+
+}
+
+/* Footer */
+
+.footer{
+
+    animation:slideUp .8s ease;
+
+}
