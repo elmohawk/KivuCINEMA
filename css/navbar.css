@@ -7,31 +7,28 @@
     position:fixed;
 
     top:0;
+
     left:0;
 
     width:100%;
 
-    height:var(--navbar-height);
+    height:75px;
 
-    z-index:var(--z-navbar);
+    z-index:1000;
 
-    background:rgba(7,11,23,.72);
+    background:rgba(7,11,23,.75);
 
-    backdrop-filter:blur(20px);
+    backdrop-filter:blur(18px);
 
-    -webkit-backdrop-filter:blur(20px);
+    border-bottom:1px solid rgba(255,255,255,.08);
 
-    border-bottom:1px solid rgba(255,255,255,.05);
-
-    transition:var(--transition);
+    transition:.3s;
 
 }
 
 .navbar.scrolled{
 
     background:#070B17;
-
-    box-shadow:var(--shadow-md);
 
 }
 
@@ -45,13 +42,7 @@
 
     justify-content:space-between;
 
-    gap:24px;
-
 }
-
-/*==========================================
-    LOGO
-==========================================*/
 
 .logo{
 
@@ -59,11 +50,11 @@
 
     align-items:center;
 
-    gap:12px;
+    gap:10px;
 
-    font-size:1.7rem;
+    font-size:1.6rem;
 
-    font-weight:800;
+    font-weight:700;
 
     color:var(--primary);
 
@@ -71,45 +62,25 @@
 
 .logo i{
 
-    font-size:2rem;
+    font-size:1.4rem;
 
 }
-
-.logo span{
-
-    letter-spacing:.5px;
-
-}
-
-/*==========================================
-    NAVIGATION
-==========================================*/
 
 .nav-links{
 
     display:flex;
 
-    align-items:center;
-
     gap:30px;
-
-    margin-left:auto;
-
-}
-
-.nav-links>li{
-
-    position:relative;
 
 }
 
 .nav-links a{
 
-    color:var(--text-light);
+    color:var(--text-secondary);
 
     font-weight:500;
 
-    transition:var(--transition);
+    transition:.3s;
 
 }
 
@@ -117,21 +88,13 @@
 
 .nav-links a.active{
 
-    color:var(--primary);
+    color:#fff;
 
 }
 
-/*==========================================
-    DROPDOWN
-==========================================*/
+.dropdown{
 
-.dropdown>a{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:8px;
+    position:relative;
 
 }
 
@@ -139,29 +102,25 @@
 
     position:absolute;
 
-    top:60px;
+    top:45px;
 
     left:0;
 
-    width:220px;
+    min-width:180px;
 
-    background:var(--bg-card);
+    background:var(--surface);
 
-    border-radius:var(--radius-md);
+    border-radius:16px;
 
-    border:1px solid var(--border);
-
-    padding:10px 0;
+    overflow:hidden;
 
     opacity:0;
 
     visibility:hidden;
 
-    transform:translateY(15px);
+    transform:translateY(10px);
 
-    transition:var(--transition);
-
-    box-shadow:var(--shadow-lg);
+    transition:.3s;
 
 }
 
@@ -175,344 +134,78 @@
 
 }
 
-.dropdown-menu li a{
+.dropdown-menu a{
 
     display:block;
 
-    padding:12px 18px;
+    padding:14px 18px;
 
 }
 
-.dropdown-menu li a:hover{
+.dropdown-menu a:hover{
 
     background:rgba(255,255,255,.05);
 
-    color:var(--primary);
-
 }
 
-/*==========================================
-    RIGHT SIDE
-==========================================*/
-
-.nav-icon{
-
-    position:relative;
-
-    width:44px;
-
-    height:44px;
-
-    border-radius:50%;
+.navbar-actions{
 
     display:flex;
 
     align-items:center;
 
-    justify-content:center;
+    gap:18px;
 
-    color:var(--text-light);
+}
 
-    background:rgba(255,255,255,.05);
+.nav-icon{
 
-    transition:var(--transition);
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    display:grid;
+
+    place-items:center;
+
+    background:rgba(255,255,255,.06);
+
+    color:#fff;
+
+    transition:.3s;
 
 }
 
 .nav-icon:hover{
 
-    color:var(--primary);
+    background:var(--primary);
 
-    background:rgba(255,255,255,.09);
+    color:#071017;
 
 }
 
-.notification-dot{
+.nav-avatar img{
 
-    position:absolute;
+    width:42px;
 
-    top:10px;
-
-    right:11px;
-
-    width:8px;
-
-    height:8px;
+    height:42px;
 
     border-radius:50%;
-
-    background:#EF4444;
-
-    animation:pulse 1.5s infinite;
-
-}
-
-/*==========================================
-    PROFILE
-==========================================*/
-
-.profile{
-
-    width:44px;
-
-    height:44px;
-
-    border-radius:50%;
-
-    overflow:hidden;
-
-    border:2px solid transparent;
-
-    transition:var(--transition);
-
-}
-
-.profile img{
-
-    width:100%;
-
-    height:100%;
 
     object-fit:cover;
 
 }
 
-.profile:hover{
-
-    border-color:var(--primary);
-
-}
-
-/*==========================================
-    MOBILE BUTTON
-==========================================*/
-
-.menu-btn{
+.menu-toggle{
 
     display:none;
 
-    width:46px;
-
-    height:46px;
-
-    border-radius:50%;
-
-    color:#fff;
-
-    background:rgba(255,255,255,.05);
-
 }
 
-/*==========================================
-    MOBILE MENU
-==========================================*/
+.mobile-menu{
 
-#mobileMenu{
-
-    position:fixed;
-
-    top:0;
-
-    left:-310px;
-
-    width:300px;
-
-    height:100vh;
-
-    background:var(--bg-secondary);
-
-    transition:.35s;
-
-    z-index:999;
-
-    overflow-y:auto;
-
-}
-
-#mobileMenu.active{
-
-    left:0;
-
-}
-
-.mobile-header{
-
-    height:80px;
-
-    padding:0 24px;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:space-between;
-
-    border-bottom:1px solid var(--border);
-
-}
-
-.mobile-header h2{
-
-    color:var(--primary);
-
-    font-size:1.5rem;
-
-}
-
-.mobile-header button{
-
-    color:#fff;
-
-    font-size:1.5rem;
-
-}
-
-#mobileMenu ul{
-
-    padding:20px;
-
-}
-
-#mobileMenu li{
-
-    margin-bottom:8px;
-
-}
-
-#mobileMenu a{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:14px;
-
-    padding:15px;
-
-    border-radius:var(--radius-sm);
-
-    transition:var(--transition);
-
-}
-
-#mobileMenu a:hover{
-
-    background:rgba(255,255,255,.05);
-
-    color:var(--primary);
-
-}
-
-/*==========================================
-    OVERLAY
-==========================================*/
-
-#menuOverlay{
-
-    position:fixed;
-
-    inset:0;
-
-    background:rgba(0,0,0,.65);
-
-    opacity:0;
-
-    visibility:hidden;
-
-    transition:var(--transition);
-
-    z-index:998;
-
-}
-
-#menuOverlay.active{
-
-    opacity:1;
-
-    visibility:visible;
-
-}
-
-/*==========================================
-    ANIMATION
-==========================================*/
-
-@keyframes pulse{
-
-    0%{
-
-        transform:scale(1);
-
-        opacity:1;
-
-    }
-
-    50%{
-
-        transform:scale(1.6);
-
-        opacity:.5;
-
-    }
-
-    100%{
-
-        transform:scale(1);
-
-        opacity:1;
-
-    }
-
-}
-
-/*==========================================
-    RESPONSIVE
-==========================================*/
-
-@media(max-width:992px){
-
-    .nav-links{
-
-        display:none;
-
-    }
-
-    .menu-btn{
-
-        display:flex;
-
-        align-items:center;
-
-        justify-content:center;
-
-    }
-
-}
-
-@media(max-width:768px){
-
-    .profile{
-
-        display:none;
-
-    }
-
-}
-
-@media(max-width:520px){
-
-    .nav-icon{
-
-        width:40px;
-
-        height:40px;
-
-    }
-
-    .logo span{
-
-        font-size:1.3rem;
-
-    }
+    display:none;
 
 }
